@@ -19,7 +19,7 @@
   form,
   h4,
   .toolbar {
-    margin-bottom: 1rem;
+    padding-bottom: 1rem;
   }
 
   .taskAdd {
@@ -36,6 +36,7 @@
     }
   }
   .edit-container {
+    margin-top: 1rem;
     border-bottom: 1px solid #242424;
     input {
       width: 50%;
@@ -64,21 +65,31 @@
       padding: 0.5rem 0.6rem;
     }
   }
-  .todo-list {
-    display: flex;
-    align-items: center;
-    border-bottom: 1px solid #242424;
-    margin-bottom: 1rem;
-    padding: 1rem;
+  .todo-container {
+    .task {
+      display: flex;
+      margin-bottom: 0.5rem;
+      border-bottom: 1px solid #242424;
+      align-items: center;
+      padding: 0.5rem;
+    }
+    .taskdone {
+      display: flex;
+      margin-bottom: 0.5rem;
+      border-bottom: 1px solid #242424;
+      padding: 0.5rem;
+      background-color: #395169;
+      text-decoration: line-through;
+      align-items: center;
+    }
+
     h4 {
       flex: 1;
+      padding-bottom: 0 !important;
     }
     button {
       padding: 0.5rem 0.6rem;
-      margin: 0 0.5rem 0 0.5rem;
+      margin: 0 0 0 0.4rem;
     }
   }
-}
-.hide {
-  display: none;
 }
